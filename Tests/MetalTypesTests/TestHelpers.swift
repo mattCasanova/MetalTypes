@@ -7,7 +7,7 @@
 
 import UIKit
 
-func timeIt(name: String, exec: () -> Void) {
+func timeIt(name: String, _ exec: () -> Void) {
     print(name)
     let start = CACurrentMediaTime()
     

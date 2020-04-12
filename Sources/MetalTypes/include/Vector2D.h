@@ -23,15 +23,15 @@
 
 - (_Nonnull instancetype) init;
 - (_Nonnull instancetype) initX:(float)x y:(float)y;
-- (_Nonnull instancetype) initVector2D:(const Vector2D* _Nonnull)vector;
-- (_Nonnull instancetype) initVector3D:(const Vector3D* _Nonnull)vector;
-- (_Nonnull instancetype) initWithRotation:(float)radians;
+- (_Nonnull instancetype) initWithVector2D:(const Vector2D* _Nonnull)vector;
+- (_Nonnull instancetype) initWithVector3D:(const Vector3D* _Nonnull)vector;
+- (_Nonnull instancetype) initWithAngle:(float)radians;
 - (_Nonnull instancetype) copy;
 
-- (Vector2D* _Nonnull)    setX:(float)x andY:(float)y;
+- (Vector2D* _Nonnull)    setX:(float)x y:(float)y;
 - (void)                  setX:(float)x;
 - (void)                  setY:(float)y;
-- (void)                  setRotation:(float)radians;
+- (void)                  setAngle:(float)radians;
 
 - (float)                 x;
 - (float)                 y;
